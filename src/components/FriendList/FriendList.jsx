@@ -17,7 +17,7 @@ export const FriendList = ({ friends }) => {
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <>
-      <OnlineMark isonline={isOnline}></OnlineMark>
+      <OnlineMark $isonline={isOnline}></OnlineMark>
       <img src={avatar} alt={name} width="48" />
       <p>{name}</p>
     </>
