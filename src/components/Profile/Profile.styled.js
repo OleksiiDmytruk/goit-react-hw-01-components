@@ -21,5 +21,5 @@ export const StatsItem = styled.li`
   align-items: center;
   gap: 8px;
   width: 100px;
-  background-color: blueviolet;
+  background-color: #eebedf;
 `;

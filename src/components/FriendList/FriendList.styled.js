@@ -10,6 +10,7 @@ export const FreindItem = styled.li`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  background-color: #d6eeee;
   gap: 12px;
 `;
 export const OnlineMark = styled.span`
@@ -17,5 +18,5 @@ export const OnlineMark = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: ${props => (props.bool ? 'green' : 'red')};
+  background-color: ${props => (props.isonline ? 'green' : 'red')};
 `;

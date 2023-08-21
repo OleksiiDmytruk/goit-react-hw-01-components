@@ -7,7 +7,7 @@ export const FriendList = ({ friends }) => {
       {friends.map(({ id, avatar, name, isOnline }) => {
         return (
           <FreindItem key={id}>
-            <FriendListItem avatar={avatar} name={name} bool={isOnline} />
+            <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
           </FreindItem>
         );
       })}
@@ -17,7 +17,7 @@ export const FriendList = ({ friends }) => {
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <>
-      <OnlineMark bool={isOnline}></OnlineMark>
+      <OnlineMark isonline={isOnline}></OnlineMark>
       <img src={avatar} alt={name} width="48" />
       <p>{name}</p>
     </>
